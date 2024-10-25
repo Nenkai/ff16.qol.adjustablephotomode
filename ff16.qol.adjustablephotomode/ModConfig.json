@@ -1,0 +1,61 @@
+{
+  "ModId": "ff16.qol.adjustablephotomode",
+  "ModName": "Adjustable Photo Mode (Free Camera)",
+  "ModAuthor": "Nenkai",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Adjustable photo mode. Right click on this mod and \u0027Configure\u0027 to view options.",
+  "ModDll": "ff16.qol.adjustablephotomode.dll",
+  "ModIcon": "Preview.jpg",
+  "ModR2RManagedDll32": "x86/ff16.qol.adjustablephotomode.dll",
+  "ModR2RManagedDll64": "x64/ff16.qol.adjustablephotomode.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "ff16.qol.adjustablephotomode.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "ff16.qol.adjustablephotomode": {
+          "Config": {
+            "UserName": "Nenkai",
+            "RepositoryName": "ff16.qol.adjustablephotomode",
+            "UseReleaseTag": true,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "ff16.qol.adjustablephotomode.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GitHubRelease": {
+      "UserName": "Nenkai",
+      "RepositoryName": "ff16.qol.adjustablephotomode",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "ff16.utility.framework",
+    "ff16.utility.modloader",
+    "Reloaded.Memory.SigScan.ReloadedII",
+    "reloaded.sharedlib.hooks"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "ffxvi.exe",
+    "ffxvi_demo.exe"
+  ],
+  "ProjectUrl": "https://github.com/Nenkai/ff16.qol.adjustablephotomode"
+}
