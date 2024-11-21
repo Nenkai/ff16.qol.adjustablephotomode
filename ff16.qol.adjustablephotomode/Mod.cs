@@ -123,6 +123,7 @@ public class Mod : ModBase // <= Do not Remove.
             return;
         }
 
+        
         NexTableLayout layout = TableMappingReader.ReadTableLayout("photocameraparam", new Version(1, 0, 0));
         for (int i = 0; i < photoTable->NumRows; i++)
         {
@@ -141,10 +142,16 @@ public class Mod : ModBase // <= Do not Remove.
             *(float*)&rowData[layout.Columns["CollisionSphereRadius"].Offset] = _configuration.CollisionSphereRadius;
             *(float*)&rowData[layout.Columns["CameraMoveSpeed"].Offset] = _configuration.CameraMoveSpeed;
             *(float*)&rowData[layout.Columns["CameraUpDownSpeed"].Offset] = _configuration.CameraUpDownSpeed;
-            *(float*)&rowData[layout.Columns["CameraUpDownSpeed"].Offset] = _configuration.CameraRotationSpeed;
+            *(float*)&rowData[layout.Columns["CameraRotationSpeed"].Offset] = _configuration.CameraRotationSpeed;
             *(float*)&rowData[layout.Columns["FieldOfView"].Offset] = _configuration.FieldOfView;
             *(float*)&rowData[layout.Columns["FieldOfViewMin"].Offset] = _configuration.FieldOfViewMin;
             *(float*)&rowData[layout.Columns["FieldOfViewMax"].Offset] = _configuration.FieldOfViewMax;
+            *(float*)&rowData[layout.Columns["Blur"].Offset] = _configuration.DefaultBlur;
+            *(float*)&rowData[layout.Columns["BlurMin"].Offset] = _configuration.BlurMin;
+            *(float*)&rowData[layout.Columns["BlurMax"].Offset] = _configuration.BlurMax;
+            *(float*)&rowData[layout.Columns["FocalDistance"].Offset] = _configuration.DefaultFocalDistance;
+            *(float*)&rowData[layout.Columns["FocalDistanceMin"].Offset] = _configuration.FocalDistanceMin;
+            *(float*)&rowData[layout.Columns["FocalDistanceMax"].Offset] = _configuration.FocalDistanceMax;
         }
 
         _logger.WriteLine($"[{_modConfig.ModId}] Applied photocameraparam changes.", _logger.ColorGreen);

@@ -2,7 +2,7 @@
   "ModId": "ff16.qol.adjustablephotomode",
   "ModName": "Adjustable Photo Mode (Free Camera)",
   "ModAuthor": "Nenkai",
-  "ModVersion": "1.0.0",
+  "ModVersion": "1.0.1",
   "ModDescription": "Adjustable photo mode. Right click on this mod and \u0027Configure\u0027 to view options.",
   "ModDll": "ff16.qol.adjustablephotomode.dll",
   "ModIcon": "Preview.jpg",
